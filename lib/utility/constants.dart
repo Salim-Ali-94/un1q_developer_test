@@ -8,9 +8,11 @@ const Color red = Color(0xFFFF0626);
 const Color green = Color(0xFF019C00);
 const Color orange = Color(0xFFFFCA51);
 
-const List<Map<String, String>> categories = [{ "icon": "sandwich", "category": "Mexican" },
-                                              { "icon": "sushi", "category": "Asian" },
-                                              { "icon": "fries", "category": "Fast Food" },
-                                              { "icon": "burger", "category": "American" },
-                                              { "icon": "salad", "category": "Vegetarian" },
-                                              { "icon": "pizza", "category": "Italian" }];
+const List<Map<String, String>> categories = [{ "icon": "sandwich", "category": "Mexican", "cover": "assets/icons/mexican.jpg" },
+                                              { "icon": "sushi", "category": "Asian", "cover": "assets/icons/asian.jpg" },
+                                              { "icon": "fries", "category": "Fast Food", "cover": "assets/icons/fast.jpg" },
+                                              { "icon": "burger", "category": "American", "cover": "assets/icons/american.jpg" },
+                                              { "icon": "salad", "category": "Vegetarian", "cover": "assets/icons/vegetarian.jpg" },
+                                              { "icon": "pizza", "category": "Italian", "cover": "assets/icons/italian.jpg" }];
+
+const String meal_endpoint = "https://stagingshop.threls.dev/api/products?filter[class]=food";
